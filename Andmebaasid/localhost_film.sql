@@ -16,3 +16,8 @@ zanrNimetus varchar(20) unique
 Insert into zanr(zanrNimetus)
 values ('draama'), ('detektiiv');
 select * from zanr;
+
+alter table film add zanrID int
+
+alter table film add constraint fk_zanr
+foreign key (zanrID) references zanr(zanrID);
