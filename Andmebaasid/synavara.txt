@@ -14,3 +14,6 @@ Piirangud / ogranichenija
 SQL - Structure Query Language - yazik strukturnyh zaprosov
 * DDL - Data Definition Language - CREATE TABLE, AlTER TABLE, DROP TABLE - polja
 * DML - Data Manipulation Language - INSERT INTO, UPDATE, DELETE - zapisi
+
+SQL Server Managment Studio
+XAMPP / phpMyAdmin
