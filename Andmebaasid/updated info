@@ -1,0 +1,50 @@
+create table rezisoor(
+rezID int Primary key identity(1,1),
+nimi varchar(40) not null,
+synniaeg date,
+riik varchar(30) not null
+);
+
+INSERT INTO rezisoor(nimi, synniaeg, riik)
+Values('Ivanov', '1962-12-31', 'Russia')
+
+select * from rezisoor;
+
+Create table kinokava(
+kinokavaID int primary key identity(1,1),
+kinoteaterNimetus varchar(30) unique,
+alusta date,
+lopp date
+)
+
+INSERT INTO kinokava(kinoteaterNimetus, alusta, lopp)
+Values('Kosmos', '2023-04-30', '2022-05-13')
+
+select * from kinokava;
+
+
+alter table film add rezID int
+select * from film;
+
+
+select * from film;
+select * from rezisoor;
+
+alter table film add constraint fk_rezisoor
+foreign key (rezID) references rezisoor(rezID);
+update film set rezID=3 where filmID=4;
+
+alter table film drop column rezisoorID
+
+
+alter table film add kinokavaID int
+select * from film;
+
+
+select * from film;
+select * from kinokava;
+
+alter table film add constraint fk_kinokava
+foreign key (kinokavaID) references kinokava(kinokavaID);
+
+update film set kinokavaID=1 where filmID=3;
