@@ -3,3 +3,10 @@ Andmetüüp:
 2. Arv (INT, SMALLLINT, Decimal(5, 2) kus on 5 - kõik arvud ja 2 - peale koma)
 3. Loogika (bit, bool, boolean, true/false)
 4. Kuupäeva (date/time, date, time)
+---------------
+Piirangud / ogranichenija
+* PRIMARY KEY - unikalnost opredelenija kazhdoy stroki v tablitse, zapisi ne mogut imet odinakovyi zanacheniy PRIMARY KEY
+* FOREIGN KEY - seos - svyaz' s PK drugoy tablitsy
+* NOT NULL
+* UNIQUE
+* CHECK - valik - võbor opredelennyh znachenyi, drugie ispolzovat' nelzja
