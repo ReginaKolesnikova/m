@@ -21,3 +21,5 @@ alter table film add zanrID int
 
 alter table film add constraint fk_zanr
 foreign key (zanrID) references zanr(zanrID);
+
+update film set zanrID=2
